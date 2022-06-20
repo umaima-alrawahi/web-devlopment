@@ -81,7 +81,7 @@ class Vector {
     }
 
     unit(){
-        return (this.x / this.length(), this.y / this.length()); 
+        return new Vector(this.x / this.length(), this.y / this.length()); 
     }
 
     angle(){
@@ -93,9 +93,9 @@ const a = new Vector(10, 12);
 const b = new Vector(3, 15);
 console.log(a);
 console.log(b);
-console.log("sum of 2 vectors is "+ a.add(b));
-console.log("sub of 2 vectors is " + a.sub(b));
-console.log("multiply of 2 vectors is " + a.multiply(b));
-console.log("length of this vector "+ a.length(a));
-console.log("unit of this vector " + a.unit(a));
-console.log("angle of this vector "+ a.angle(a));
+console.log(a.add(b));
+console.log(a.sub(b));
+console.log(a.multiply(b));
+console.log(a.length(a));
+console.log(a.unit(a));
+console.log(a.angle(a));
